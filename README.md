@@ -24,7 +24,7 @@ Le but de ce deuxième TP est de commencer à travailler en autonomie avec un d�
 
 ### 1.1 Génération de la clé SSH
 ```bash
-ssh-keygen -t ed25519 -C "youssifputrus@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "youssifputrus@gmail.com"
 ```
 
 ### 1.2 Récupération de la clé
@@ -35,7 +35,7 @@ cat cat ~/.ssh/id_rsa.pub
 ### 1.3 Ajout de la clé sur GitHub
 - Aller dans **Settings > SSH and GPG keys** sur GitHub
 - Ajouter une nouvelle clé SSH
-- Copier-coller le contenu de `id_ed25519.pub`
+- Copier-coller le contenu de `id_rsa.pub`
 
  Clé SSH ajoutée avec succès
 
@@ -47,7 +47,8 @@ cat cat ~/.ssh/id_rsa.pub
 
 ### 1.2 Ajout du lien du dépôt distant
 ```bash
-git remote add origin git@github.com:TonNomUtilisateur/tp1.git
+origin  git@github.com:you8bssm/tp1.git (fetch)
+origin  git@github.com:you8bssm/tp1.git (push)
 ```
 
 ### 1.3 Vérification
